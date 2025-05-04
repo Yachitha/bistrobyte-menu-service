@@ -31,6 +31,8 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("org.flywaydb:flyway-core:9.22.3")
+    runtimeOnly("org.postgresql:postgresql")
 }
 
 tasks.withType<Test> {
